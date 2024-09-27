@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEER YEAH - Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Correct path to CSS -->
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h1>BEER YEAH</h1></a> <!-- Logo as a link to Home -->
+            </div>
+            <div class="nav-links"> <!-- Navigation Links -->
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Products Section -->
+        <section class="products-container">
+            <h2>Our Products</h2>
+            <div class="grid">
+                <div class="product-card">
+                    <img src="shirt.jpg" alt="Shirt">
+                    <h3>BEER YEAH Shirt</h3>
+                    <p>$19.99</p>
+                    <button onclick="addToCart('BEER YEAH Shirt', 19.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="hat.jpg" alt="Hat">
+                    <h3>BEER YEAH Hat</h3>
+                    <p>$14.99</p>
+                    <button onclick="addToCart('BEER YEAH Hat', 14.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="BEER-bong.jpg" alt="BEER Bong">
+                    <h3>BEER YEAH BEER Bong</h3>
+                    <p>$24.99</p>
+                    <button onclick="addToCart('BEER YEAH BEER Bong', 24.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="koozie.jpg" alt="Koozie">
+                    <h3>BEER YEAH Koozie</h3>
+                    <p>$5.99</p>
+                    <button onclick="addToCart('BEER YEAH Koozie', 5.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BEER YEAH | All Rights Reserved.</p>
+    </footer>
+
+    <script src="../javascript/scripts.js"></script> <!-- Correct path to JavaScript -->
+</body>
+</html>
