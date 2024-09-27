@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEER YEAH - Home</title>
+    <title>BEER YEAH - Your Cart</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css"> <!-- Correct path to CSS -->
 </head>
@@ -16,20 +16,21 @@
             </div>
             <div class="nav-links"> <!-- Navigation Links -->
                 <ul>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="../UI/products.html">Products</a></li>
+                    <li><a href="../UI/cart.html">Cart</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to BEER YEAH</h1>
-            <p>Your ultimate store for the best beer gear - from shirts and hats to beer bongs and koozies.</p>
-            <a href="products.html" class="cta-button">Shop Now</a>
-        </div>
-    </section>
+    <main>
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 BEER YEAH | All Rights Reserved.</p>
