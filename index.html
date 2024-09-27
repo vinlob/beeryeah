@@ -7,17 +7,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css"> <!-- Correct path to CSS -->
 </head>
+
+<!-- Dynamically set base href based on environment -->
+<script>
+    if (window.location.hostname === 'localhost') {
+        document.write('<base href="/">'); 
+    } else {
+        document.write('<base href="/beeryeah/">');  
+    }
+</script>
+
 <body>
     <!-- Navbar -->
     <header>
         <nav>
             <div class="logo">
-                <a href="../index.html"><h1>BEER YEAH</h1></a> <!-- Logo as a link to Home -->
+                <a href="../beeryeah/index.html"><h1>BEER YEAH</h1></a> <!-- Logo as a link to Home -->
             </div>
             <div class="nav-links"> <!-- Navigation Links -->
                 <ul>
-                    <li><a href="../UI/products.html">Products</a></li>
-                    <li><a href="../UI/cart.html">Cart</a></li>
+                    <li><a href="../beeryeah/UI/products.html">Products</a></li>
+                    <li><a href="../beeryeah/UI/cart.html">Cart</a></li>
                 </ul>
             </div>
         </nav>

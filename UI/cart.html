@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css"> <!-- Correct path to CSS -->
 </head>
+
+<!-- Dynamically set base href based on environment -->
+<script>
+    if (window.location.hostname === 'localhost') {
+        document.write('<base href="/">'); 
+    } else {
+        document.write('<base href="/beeryeah/">');  
+    }
+</script>
+
 <body>
     <!-- Navbar -->
     <header>
